@@ -281,7 +281,7 @@ extension ViewController: UITextFieldDelegate {
  
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
 
-        guard let view = textField.inputAccessoryView  else {
+        guard let _ = textField.inputAccessoryView  else {
             textField.inputAccessoryView = accessoryView
             return true
         }
